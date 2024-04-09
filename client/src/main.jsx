@@ -6,12 +6,12 @@ import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
 import { StateContextProvider } from './context';
 import App from './App';
 import './index.css';
-import { Mumbai } from '@thirdweb-dev/chains';
+import {Mumbai, Sepolia} from '@thirdweb-dev/chains';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <ThirdwebProvider desiredChainId={ChainId.Mumbai} activeChain={Mumbai} clientId="adaae470128fc43985129726b8f70a10"> 
+  <ThirdwebProvider desiredChainId={11155111} activeChain={Sepolia} clientId="e5bdb69d2660ebf423b4de0effa41bd4">
     <Router>
       <StateContextProvider>
         <App />
